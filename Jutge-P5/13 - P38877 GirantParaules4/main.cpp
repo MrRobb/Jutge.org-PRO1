@@ -2,21 +2,23 @@
 
 using namespace std;
 
-int girar(int n, string s, int stop){
-  string s2;
-  if (cin >> s2){
-    n = girar(n,s2,stop);
+void girar(int i, int n, int& m){
+  string st;
+  if (cin >> st){
+    i = i + 1;
+    girar(i,n,m);
+    if (m-i+1 <= n) cout << st << endl;
+  } else {
+    m = i;
   }
-  if (n <= stop){
-    cout << s << endl;
-  }
-  return ++n;
 }
 
 int main() {
-  int n = 1;
-  string s;
-  int stop = 0;
-  cin >> stop;
-  girar(n,s,stop);
+  int m = 0;
+  int n;
+  int i = 0;
+
+  cin >> n;
+
+  girar(i,n,m);
 }
