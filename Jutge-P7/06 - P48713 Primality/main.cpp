@@ -1,33 +1,24 @@
 #include <iostream>
-#include <vector>
+#include <cmath>
 
 using namespace std;
 
-void is_prime(long x){
-  bool e = 1;
-  int i = 2;
-  if (x == 0){
-    cout << x << " is not prime" << endl;
-    e = 0;
+bool is_prime(int n) {
+  if (n <= 1) return false;
+  int max = sqrt(n);
+  for (int i = 2; i <= max; i++) {
+    if (n%i == 0) return false;
   }
-  while (e == 1 and i*i <= x){
-    if (x%i == 0) {
-      cout << x << " is not prime" << endl;
-      e = 0;
-    }
-    i++;
-  }
-  if (e)cout << x << " is prime" << endl;
+  return true;
 }
 
 int main() {
-  unsigned long sequence;
-  long num;
-  cin >> sequence;
-  vector<long> v(sequence);
-  for (int i = 0; i < sequence; i++){
-    cin >> num;
-    v[i] = num;
-    is_prime(v[i]);
+  int n;
+  cin >> n;
+  for (int i = 0; i < n; i++) {
+    int x; cin >> x;
+    if (is_prime(x)) cout << x << " is prime" << endl;
+    else cout << x << " is not prime" << endl;
   }
 }
+
