@@ -4,29 +4,30 @@ using namespace std;
 
 int main() {
 
-  char c;
-  while (cin >> c){
+  string s;
+  while (cin >> s){
     int num = 0;
     int unknown = 0;
 
-    for (int i = 0; i < 10; i++){
-      if (47 < int(c) and int(c) < 58){
-        num += ((int(c)-'0') * (10-i));
-      } else if (c == 'X') {
+    for (int i = 0; i < s.size(); i++){
+      if (s[i] >= 48 and s[i] <= 57){
+        num += (s[i]-'0') * (10-i);
+      } else if (s[i] == 'X'){
         num += 10;
       } else {
         unknown = 10-i;
       }
-      if (i != 9) cin >> c;
     }
 
-    for (int i = 1; i <= 10; i++){
-      if ((i*unknown + num) % 11 == 0){
-        if (i != 10) cout << i << endl;
-        else cout << 'X' << endl;
-      }
+    bool encontrado = false;
+    int j = 0;
+    while (!encontrado){
+      if ((num+(unknown*j)) % 11 == 0) encontrado = true;
+      j++;
     }
+
+    if (--j == 10) cout << 'X' << endl;
+    else cout << j << endl;
+
   }
-
-
 }
