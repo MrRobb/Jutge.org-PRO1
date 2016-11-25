@@ -3,9 +3,10 @@
 
 using namespace std;
 
-typedef vector<vector<int>> Matrix;
+typedef vector< vector<int> > Matrix;
 
 Matrix sum(const Matrix& a, const Matrix& b){
+
   // Creo una matriz del mismo tamaño que a o b (en este caso a)
   Matrix m(a.size(),vector<int>(a[0].size()));
 
