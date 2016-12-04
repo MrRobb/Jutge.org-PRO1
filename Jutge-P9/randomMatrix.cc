@@ -1,8 +1,8 @@
 #include <iostream>
 #include <stdlib.h> 
 #include <vector>
-
 using namespace std;
+
 typedef vector< vector<int> > Matrix;
 
 Matrix randomMatrix(int filas, int columnas){
@@ -13,6 +13,14 @@ Matrix randomMatrix(int filas, int columnas){
 		}
 	}
 	return m;
+}
+
+void readMatrix(Matrix m){
+	for (int i = 0; i < m.size(); ++i){
+		for(int j = 0; j < m[0].size(); ++j){
+			cin >> m[i][j];
+		}
+	}
 }
 
 void printMatrix(Matrix m){
