@@ -28,7 +28,7 @@ int mcd(int a, int b){
   return b;
 }
 
-Rational rational(int n, int d){
+Rational simplify(int n, int d){
   int maxcd = 1;
   if(n != 0) maxcd = mcd(n,d);
 
@@ -55,7 +55,7 @@ Rational sum(const Rational& a, const Rational& b){
   result.num = (mcm/a.den*a.num) + (mcm/a.den*a.num);
   result.den = mcm;
 
-  return rational(result.num,result.den);
+  return simplify(result.num, result.den);
 }
 
 Rational substraction(const Rational& a, const Rational& b){
@@ -65,7 +65,7 @@ Rational substraction(const Rational& a, const Rational& b){
   result.num = (mcm/a.den*a.num) - (mcm/a.den*a.num);
   result.den = mcm;
 
-  return rational(result.num,result.den);
+  return simplify(result.num, result.den);
 }
 
 Rational product(const Rational& a, const Rational& b){
@@ -73,7 +73,7 @@ Rational product(const Rational& a, const Rational& b){
   result.num = a.num * b.num;
   result.den = a.den * b.den;
 
-  return rational(result.num,result.den);
+  return simplify(result.num, result.den);
 }
 
 Rational division(const Rational& a, const Rational& b){
@@ -81,5 +81,9 @@ Rational division(const Rational& a, const Rational& b){
   result.num = a.num * b.den;
   result.den = a.den * b.num;
 
-  return rational(result.num,result.den);
+  return simplify(result.num, result.den);
+}
+
+void adds_one(Rational& r){
+  r.num += r.den;
 }
