@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Not tried
+
 struct Rational {
   int num, den;
 };

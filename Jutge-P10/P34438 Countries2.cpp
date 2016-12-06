@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Not tried
+
 struct Province {
   string name;
   string capital;

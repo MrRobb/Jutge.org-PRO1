@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Not tried
+
 struct Student {
   int idn;
   string name;
