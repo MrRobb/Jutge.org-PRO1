@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Not tried
+// Wrong Answer -> will be solved on 8/12 - 13:00 AM
 
 struct Province {
   string name;
