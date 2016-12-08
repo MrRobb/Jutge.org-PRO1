@@ -3,8 +3,6 @@
 
 using namespace std;
 
-// Wrong Answer -> will be solved on 8/12 - 13:00 AM
-
 struct Student {
   int idn;
   string name;
