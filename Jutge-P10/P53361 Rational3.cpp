@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Wrong Answer -> will be solved on 9/12 - 16:00
+// Wrong Answer -> will be solved on 13/12 - 16:00
 
 struct Rational {
   int num, den;
