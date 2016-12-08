@@ -23,7 +23,7 @@ void information(const vector<Student>& stu, double& min, double& max, double& a
   int size = int(stu.size());
 
   for(int i = 0; i < size; ++i){
-    if (!stu[i].repeater){
+    if (!stu[i].repeater and stu[i].mark >= 0){
       if (min == -1){
         min = stu[i].mark;
         max = stu[i].mark;
@@ -38,7 +38,7 @@ void information(const vector<Student>& stu, double& min, double& max, double& a
     }
   }
 
-  avg = avg / (size - repeaters);
+  if (avg != -1) avg = avg / (size - repeaters);
 }
 
 int main(){
