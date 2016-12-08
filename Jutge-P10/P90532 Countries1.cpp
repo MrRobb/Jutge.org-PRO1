@@ -3,8 +3,6 @@
 
 using namespace std;
 
-// Wrong Answer -> will be solved on 8/12 - 13:00
-
 struct Province {
   string name;
   string capital;
@@ -32,7 +30,7 @@ double gdp(const Countries& p, char c, double d){
       int sizeprovinces = int(p[i].provs.size());
 
       for (int j = 0; j < sizeprovinces; ++j){
-        if (p[i].provs[j].population / p[i].provs[j].area > d){
+        if ((double(p[i].provs[j].population) / double(p[i].provs[j].area)) > d){
           // For the provinces with density STRICTLY greater than d.
 
           sum += p[i].provs[j].gdp;
