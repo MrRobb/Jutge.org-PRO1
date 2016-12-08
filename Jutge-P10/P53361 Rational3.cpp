@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Not tried
+// Wrong Answer -> will be solved on 9/12 - 16:00
 
 struct Rational {
   int num, den;
@@ -86,4 +86,8 @@ Rational division(const Rational& a, const Rational& b){
 
 void adds_one(Rational& r){
   r.num += r.den;
+}
+
+int main(){
+
 }
