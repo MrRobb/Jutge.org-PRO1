@@ -52,7 +52,7 @@ Rational sum(const Rational& a, const Rational& b){
   int mcm = a.den*b.den/mcd(a.den,b.den);
 
   Rational result;
-  result.num = (mcm/a.den*a.num) + (mcm/a.den*a.num);
+  result.num = ((mcm/a.den)*a.num) + ((mcm/b.den)*b.num);
   result.den = mcm;
 
   return simplify(result.num, result.den);
@@ -62,7 +62,7 @@ Rational substraction(const Rational& a, const Rational& b){
   int mcm = a.den*b.den/mcd(a.den,b.den);
 
   Rational result;
-  result.num = (mcm/a.den*a.num) - (mcm/a.den*a.num);
+  result.num = (mcm/a.den*a.num) - (mcm/b.den*b.num);
   result.den = mcm;
 
   return simplify(result.num, result.den);
@@ -86,8 +86,8 @@ Rational division(const Rational& a, const Rational& b){
 
 void adds_one(Rational& r){
   r.num += r.den;
+  simplify(r.num,r.den);
 }
 
 int main(){
-
 }
