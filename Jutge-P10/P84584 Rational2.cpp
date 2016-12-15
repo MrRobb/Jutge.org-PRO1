@@ -44,10 +44,12 @@ Rational simplify(int n, int d){
 }
 
 void read_rational(Rational& r, bool& end){
-  if (cin >> r.num >> r.den){
-    simplify(r.num,r.den);
-    end = true;
-  } else end = false;
+  if (cin >> r.num){
+    if (cin >> r.den){
+      r = simplify(r.num,r.den);
+      end = false;
+    } else end = true;
+  } else end = true;
 }
 
 void print_rational(const Rational& r){
