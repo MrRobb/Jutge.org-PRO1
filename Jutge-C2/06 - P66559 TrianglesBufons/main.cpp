@@ -1,36 +1,38 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
 
-// NOT FINISHED
-
 void escriu_triangle(int t){
-  int lineas = t*2;
 
-  for (int i = 1; i <= lineas; ++i){ // Cada linea
+  int aux = 1;
 
-    // Poner espacios
-    for(int counter_spaces = lineas-i; counter_spaces >= 0; --counter_spaces){
-      cout << ' ';
+  for(int i=t*2; i>0; i--){
+
+    for(int j=0; j<i-1; j++)cout<<' ';
+
+    if(i%2==0){
+
+      for(int m=0; m<aux; m++){
+
+        cout<<"/\\";
+        if(aux>1 and m+1<aux)cout<<"  ";
+      }
+      cout<<endl;
     }
+    else{
 
-    cout << "/";
-
-
-
-
-    cout << endl;
+      for(int m=0; m<aux; m++)cout<<"/__\\";
+      cout<<endl;
+      aux++;
+    }
   }
 }
 
-int main() {
+int main(){
 
-  int x = 0;
-  cin >> x;
-  while (x > 0){
-    escriu_triangle(x);
-    cin >> x;
+  int t;
+  while(cin>>t and t>0){
+
+    escriu_triangle(t);
+    cout<<endl;
   }
-
 }
