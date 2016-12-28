@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-
 int position_maximum(const vector<double>& v, int m){
   double max = v[0];
   int position = 0;
