@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Santa
+
+# Build rule for target.
+Santa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Santa
+.PHONY : Santa
+
+# fast build rule for target.
+Santa/fast:
+	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/build
+.PHONY : Santa/fast
+
+#=============================================================================
+# Target rules for targets named SepSort
+
+# Build rule for target.
+SepSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SepSort
+.PHONY : SepSort
+
+# fast build rule for target.
+SepSort/fast:
+	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/build
+.PHONY : SepSort/fast
+
+#=============================================================================
 # Target rules for targets named Pangrams
 
 # Build rule for target.
@@ -137,6 +163,19 @@ Diff/fast:
 .PHONY : Diff/fast
 
 #=============================================================================
+# Target rules for targets named Magic
+
+# Build rule for target.
+Magic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Magic
+.PHONY : Magic
+
+# fast build rule for target.
+Magic/fast:
+	$(MAKE) -f CMakeFiles/Magic.dir/build.make CMakeFiles/Magic.dir/build
+.PHONY : Magic/fast
+
+#=============================================================================
 # Target rules for targets named Words
 
 # Build rule for target.
@@ -148,6 +187,19 @@ Words: cmake_check_build_system
 Words/fast:
 	$(MAKE) -f CMakeFiles/Words.dir/build.make CMakeFiles/Words.dir/build
 .PHONY : Words/fast
+
+#=============================================================================
+# Target rules for targets named WSquare
+
+# Build rule for target.
+WSquare: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 WSquare
+.PHONY : WSquare
+
+# fast build rule for target.
+WSquare/fast:
+	$(MAKE) -f CMakeFiles/WSquare.dir/build.make CMakeFiles/WSquare.dir/build
+.PHONY : WSquare/fast
 
 #=============================================================================
 # Target rules for targets named Diagonal
@@ -163,19 +215,6 @@ Diagonal/fast:
 .PHONY : Diagonal/fast
 
 #=============================================================================
-# Target rules for targets named Magic
-
-# Build rule for target.
-Magic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Magic
-.PHONY : Magic
-
-# fast build rule for target.
-Magic/fast:
-	$(MAKE) -f CMakeFiles/Magic.dir/build.make CMakeFiles/Magic.dir/build
-.PHONY : Magic/fast
-
-#=============================================================================
 # Target rules for targets named Anagrams
 
 # Build rule for target.
@@ -187,32 +226,6 @@ Anagrams: cmake_check_build_system
 Anagrams/fast:
 	$(MAKE) -f CMakeFiles/Anagrams.dir/build.make CMakeFiles/Anagrams.dir/build
 .PHONY : Anagrams/fast
-
-#=============================================================================
-# Target rules for targets named Santa
-
-# Build rule for target.
-Santa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Santa
-.PHONY : Santa
-
-# fast build rule for target.
-Santa/fast:
-	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/build
-.PHONY : Santa/fast
-
-#=============================================================================
-# Target rules for targets named SepSort
-
-# Build rule for target.
-SepSort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SepSort
-.PHONY : SepSort
-
-# fast build rule for target.
-SepSort/fast:
-	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/build
-.PHONY : SepSort/fast
 
 #=============================================================================
 # Target rules for targets named Sort
@@ -389,6 +402,33 @@ P77715_Pangrams.cpp.s:
 	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/P77715_Pangrams.cpp.s
 .PHONY : P77715_Pangrams.cpp.s
 
+P82111_WordSquare.o: P82111_WordSquare.cpp.o
+
+.PHONY : P82111_WordSquare.o
+
+# target to build an object file
+P82111_WordSquare.cpp.o:
+	$(MAKE) -f CMakeFiles/WSquare.dir/build.make CMakeFiles/WSquare.dir/P82111_WordSquare.cpp.o
+.PHONY : P82111_WordSquare.cpp.o
+
+P82111_WordSquare.i: P82111_WordSquare.cpp.i
+
+.PHONY : P82111_WordSquare.i
+
+# target to preprocess a source file
+P82111_WordSquare.cpp.i:
+	$(MAKE) -f CMakeFiles/WSquare.dir/build.make CMakeFiles/WSquare.dir/P82111_WordSquare.cpp.i
+.PHONY : P82111_WordSquare.cpp.i
+
+P82111_WordSquare.s: P82111_WordSquare.cpp.s
+
+.PHONY : P82111_WordSquare.s
+
+# target to generate assembly for a file
+P82111_WordSquare.cpp.s:
+	$(MAKE) -f CMakeFiles/WSquare.dir/build.make CMakeFiles/WSquare.dir/P82111_WordSquare.cpp.s
+.PHONY : P82111_WordSquare.cpp.s
+
 P96432_SecretSanta.o: P96432_SecretSanta.cpp.o
 
 .PHONY : P96432_SecretSanta.o
@@ -476,16 +516,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... Pangrams"
-	@echo "... edit_cache"
-	@echo "... Diff"
-	@echo "... Words"
-	@echo "... Diagonal"
-	@echo "... Magic"
-	@echo "... Anagrams"
 	@echo "... Santa"
+	@echo "... rebuild_cache"
 	@echo "... SepSort"
+	@echo "... Pangrams"
+	@echo "... Diff"
+	@echo "... Magic"
+	@echo "... Words"
+	@echo "... WSquare"
+	@echo "... edit_cache"
+	@echo "... Diagonal"
+	@echo "... Anagrams"
 	@echo "... Sort"
 	@echo "... P25261_Sort.o"
 	@echo "... P25261_Sort.i"
@@ -505,6 +546,9 @@ help:
 	@echo "... P77715_Pangrams.o"
 	@echo "... P77715_Pangrams.i"
 	@echo "... P77715_Pangrams.s"
+	@echo "... P82111_WordSquare.o"
+	@echo "... P82111_WordSquare.i"
+	@echo "... P82111_WordSquare.s"
 	@echo "... P96432_SecretSanta.o"
 	@echo "... P96432_SecretSanta.i"
 	@echo "... P96432_SecretSanta.s"
