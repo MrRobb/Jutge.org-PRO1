@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Pangrams
+
+# Build rule for target.
+Pangrams: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Pangrams
+.PHONY : Pangrams
+
+# fast build rule for target.
+Pangrams/fast:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/build
+.PHONY : Pangrams/fast
+
+#=============================================================================
+# Target rules for targets named Diff
+
+# Build rule for target.
+Diff: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Diff
+.PHONY : Diff
+
+# fast build rule for target.
+Diff/fast:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/build
+.PHONY : Diff/fast
+
+#=============================================================================
 # Target rules for targets named Words
 
 # Build rule for target.
@@ -228,6 +254,33 @@ P25261_Sort.cpp.s:
 	$(MAKE) -f CMakeFiles/Sort.dir/build.make CMakeFiles/Sort.dir/P25261_Sort.cpp.s
 .PHONY : P25261_Sort.cpp.s
 
+P25401_Different?.o: P25401_Different?.cpp.o
+
+.PHONY : P25401_Different?.o
+
+# target to build an object file
+P25401_Different?.cpp.o:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/P25401_Different?.cpp.o
+.PHONY : P25401_Different?.cpp.o
+
+P25401_Different?.i: P25401_Different?.cpp.i
+
+.PHONY : P25401_Different?.i
+
+# target to preprocess a source file
+P25401_Different?.cpp.i:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/P25401_Different?.cpp.i
+.PHONY : P25401_Different?.cpp.i
+
+P25401_Different?.s: P25401_Different?.cpp.s
+
+.PHONY : P25401_Different?.s
+
+# target to generate assembly for a file
+P25401_Different?.cpp.s:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/P25401_Different?.cpp.s
+.PHONY : P25401_Different?.cpp.s
+
 P25992_SeparatedSort.o: P25992_SeparatedSort.cpp.o
 
 .PHONY : P25992_SeparatedSort.o
@@ -308,6 +361,33 @@ P71916_Anagrams.s: P71916_Anagrams.cpp.s
 P71916_Anagrams.cpp.s:
 	$(MAKE) -f CMakeFiles/Anagrams.dir/build.make CMakeFiles/Anagrams.dir/P71916_Anagrams.cpp.s
 .PHONY : P71916_Anagrams.cpp.s
+
+P77715_Pangrams.o: P77715_Pangrams.cpp.o
+
+.PHONY : P77715_Pangrams.o
+
+# target to build an object file
+P77715_Pangrams.cpp.o:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/P77715_Pangrams.cpp.o
+.PHONY : P77715_Pangrams.cpp.o
+
+P77715_Pangrams.i: P77715_Pangrams.cpp.i
+
+.PHONY : P77715_Pangrams.i
+
+# target to preprocess a source file
+P77715_Pangrams.cpp.i:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/P77715_Pangrams.cpp.i
+.PHONY : P77715_Pangrams.cpp.i
+
+P77715_Pangrams.s: P77715_Pangrams.cpp.s
+
+.PHONY : P77715_Pangrams.s
+
+# target to generate assembly for a file
+P77715_Pangrams.cpp.s:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/P77715_Pangrams.cpp.s
+.PHONY : P77715_Pangrams.cpp.s
 
 P96432_SecretSanta.o: P96432_SecretSanta.cpp.o
 
@@ -397,7 +477,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... Pangrams"
 	@echo "... edit_cache"
+	@echo "... Diff"
 	@echo "... Words"
 	@echo "... Diagonal"
 	@echo "... Magic"
@@ -408,6 +490,9 @@ help:
 	@echo "... P25261_Sort.o"
 	@echo "... P25261_Sort.i"
 	@echo "... P25261_Sort.s"
+	@echo "... P25401_Different?.o"
+	@echo "... P25401_Different?.i"
+	@echo "... P25401_Different?.s"
 	@echo "... P25992_SeparatedSort.o"
 	@echo "... P25992_SeparatedSort.i"
 	@echo "... P25992_SeparatedSort.s"
@@ -417,6 +502,9 @@ help:
 	@echo "... P71916_Anagrams.o"
 	@echo "... P71916_Anagrams.i"
 	@echo "... P71916_Anagrams.s"
+	@echo "... P77715_Pangrams.o"
+	@echo "... P77715_Pangrams.i"
+	@echo "... P77715_Pangrams.s"
 	@echo "... P96432_SecretSanta.o"
 	@echo "... P96432_SecretSanta.i"
 	@echo "... P96432_SecretSanta.s"

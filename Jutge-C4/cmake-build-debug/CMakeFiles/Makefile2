@@ -60,13 +60,87 @@ CMAKE_SOURCE_DIR = "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 
 CMAKE_BINARY_DIR = "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug"
 
 #=============================================================================
+# Target rules for target CMakeFiles/Pangrams.dir
+
+# All Build rule for target.
+CMakeFiles/Pangrams.dir/all:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/depend
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=9,10 "Built target Pangrams"
+.PHONY : CMakeFiles/Pangrams.dir/all
+
+# Include target in all.
+all: CMakeFiles/Pangrams.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Pangrams.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Pangrams.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Pangrams.dir/rule
+
+# Convenience name for target.
+Pangrams: CMakeFiles/Pangrams.dir/rule
+
+.PHONY : Pangrams
+
+# clean rule for target.
+CMakeFiles/Pangrams.dir/clean:
+	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/clean
+.PHONY : CMakeFiles/Pangrams.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Pangrams.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Diff.dir
+
+# All Build rule for target.
+CMakeFiles/Diff.dir/all:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/depend
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target Diff"
+.PHONY : CMakeFiles/Diff.dir/all
+
+# Include target in all.
+all: CMakeFiles/Diff.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Diff.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Diff.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Diff.dir/rule
+
+# Convenience name for target.
+Diff: CMakeFiles/Diff.dir/rule
+
+.PHONY : Diff
+
+# clean rule for target.
+CMakeFiles/Diff.dir/clean:
+	$(MAKE) -f CMakeFiles/Diff.dir/build.make CMakeFiles/Diff.dir/clean
+.PHONY : CMakeFiles/Diff.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Diff.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Words.dir
 
 # All Build rule for target.
 CMakeFiles/Words.dir/all:
 	$(MAKE) -f CMakeFiles/Words.dir/build.make CMakeFiles/Words.dir/depend
 	$(MAKE) -f CMakeFiles/Words.dir/build.make CMakeFiles/Words.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=13,14 "Built target Words"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target Words"
 .PHONY : CMakeFiles/Words.dir/all
 
 # Include target in all.
@@ -140,7 +214,7 @@ clean: CMakeFiles/Diagonal.dir/clean
 CMakeFiles/Magic.dir/all:
 	$(MAKE) -f CMakeFiles/Magic.dir/build.make CMakeFiles/Magic.dir/depend
 	$(MAKE) -f CMakeFiles/Magic.dir/build.make CMakeFiles/Magic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target Magic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=7,8 "Built target Magic"
 .PHONY : CMakeFiles/Magic.dir/all
 
 # Include target in all.
@@ -214,7 +288,7 @@ clean: CMakeFiles/Anagrams.dir/clean
 CMakeFiles/Santa.dir/all:
 	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/depend
 	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=7,8 "Built target Santa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target Santa"
 .PHONY : CMakeFiles/Santa.dir/all
 
 # Include target in all.
@@ -251,7 +325,7 @@ clean: CMakeFiles/Santa.dir/clean
 CMakeFiles/SepSort.dir/all:
 	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/depend
 	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=9,10 "Built target SepSort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=13,14 "Built target SepSort"
 .PHONY : CMakeFiles/SepSort.dir/all
 
 # Include target in all.
@@ -288,7 +362,7 @@ clean: CMakeFiles/SepSort.dir/clean
 CMakeFiles/Sort.dir/all:
 	$(MAKE) -f CMakeFiles/Sort.dir/build.make CMakeFiles/Sort.dir/depend
 	$(MAKE) -f CMakeFiles/Sort.dir/build.make CMakeFiles/Sort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target Sort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C4/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target Sort"
 .PHONY : CMakeFiles/Sort.dir/all
 
 # Include target in all.
