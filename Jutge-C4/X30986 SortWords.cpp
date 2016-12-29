@@ -24,20 +24,25 @@ int main(){
   int words;
   while (cin >> words){
     // Create vector
-    vector<Word> w(0);
-    Word s;
+    vector<string> v(words);
+    vector<Word> w(words);
     for(int i = 0; i < words; ++i){
-      cin >> s.s;
-      bool found = false;
-      for(int j = 0; j < w.size(); ++j){   // Search if it is already in the vector
-        if(s.s == w[j].s){
-          ++w[j].n;
-          found = true;
-        }
-      }
-      if(!found){
-        w.push_back(s);
-        w[w.size()-1].n = 1;
+      cin >> v[i];
+      w[i].n = 0;
+      w[i].s = "";
+    }
+    sort(v.begin(),v.end());
+
+    // Check how many repeated words are in the vector
+    int u = 0;
+    if(words != 0) w[u].s = v[0];
+    for(int i = 0; i < words; ++i){
+      if(w[u].s != v[i]){
+        ++u;
+        w[u].s = v[i];
+        w[u].n = 1;
+      } else {
+        ++w[u].n;
       }
     }
 
@@ -45,9 +50,8 @@ int main(){
     sort(w.begin(),w.end(),comp);
 
     // Print
-    int size = w.size();
-    for(int i = 0; i < size; ++i){
-      cout << w[i].n << ' ' << w[i].s << endl;
+    for(int i = 0; i < words; ++i){
+      if(w[i].n > 0) cout << w[i].n << ' ' << w[i].s << endl;
     }
 
     cout << "----------" << endl;
