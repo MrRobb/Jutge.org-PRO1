@@ -97,6 +97,117 @@ clean: CMakeFiles/P04.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Rect.dir
+
+# All Build rule for target.
+CMakeFiles/Rect.dir/all:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/depend
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target Rect"
+.PHONY : CMakeFiles/Rect.dir/all
+
+# Include target in all.
+all: CMakeFiles/Rect.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Rect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Rect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Rect.dir/rule
+
+# Convenience name for target.
+Rect: CMakeFiles/Rect.dir/rule
+
+.PHONY : Rect
+
+# clean rule for target.
+CMakeFiles/Rect.dir/clean:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/clean
+.PHONY : CMakeFiles/Rect.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Rect.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Reorganize.dir
+
+# All Build rule for target.
+CMakeFiles/Reorganize.dir/all:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/depend
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" --progress-num=19,20 "Built target Reorganize"
+.PHONY : CMakeFiles/Reorganize.dir/all
+
+# Include target in all.
+all: CMakeFiles/Reorganize.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Reorganize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Reorganize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Reorganize.dir/rule
+
+# Convenience name for target.
+Reorganize: CMakeFiles/Reorganize.dir/rule
+
+.PHONY : Reorganize
+
+# clean rule for target.
+CMakeFiles/Reorganize.dir/clean:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/clean
+.PHONY : CMakeFiles/Reorganize.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Reorganize.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/P03.dir
+
+# All Build rule for target.
+CMakeFiles/P03.dir/all:
+	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/depend
+	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target P03"
+.PHONY : CMakeFiles/P03.dir/all
+
+# Include target in all.
+all: CMakeFiles/P03.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/P03.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/P03.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/P03.dir/rule
+
+# Convenience name for target.
+P03: CMakeFiles/P03.dir/rule
+
+.PHONY : P03
+
+# clean rule for target.
+CMakeFiles/P03.dir/clean:
+	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/clean
+.PHONY : CMakeFiles/P03.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/P03.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/P05.dir
 
 # All Build rule for target.
@@ -204,43 +315,6 @@ CMakeFiles/P06.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/P06.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/P03.dir
-
-# All Build rule for target.
-CMakeFiles/P03.dir/all:
-	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/depend
-	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target P03"
-.PHONY : CMakeFiles/P03.dir/all
-
-# Include target in all.
-all: CMakeFiles/P03.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/P03.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/P03.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 1/PRO1/C++/Jutge.org-PRO1/Jutge-C3/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/P03.dir/rule
-
-# Convenience name for target.
-P03: CMakeFiles/P03.dir/rule
-
-.PHONY : P03
-
-# clean rule for target.
-CMakeFiles/P03.dir/clean:
-	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/clean
-.PHONY : CMakeFiles/P03.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/P03.dir/clean
 
 .PHONY : clean
 

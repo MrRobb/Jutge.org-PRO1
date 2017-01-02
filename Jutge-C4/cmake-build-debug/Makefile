@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = "/Users/Roberto/Documents/School/Universidad/Año 1/Semestre 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Santa
+# Target rules for targets named Gold
 
 # Build rule for target.
-Santa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Santa
-.PHONY : Santa
+Gold: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Gold
+.PHONY : Gold
 
 # fast build rule for target.
-Santa/fast:
-	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/build
-.PHONY : Santa/fast
+Gold/fast:
+	$(MAKE) -f CMakeFiles/Gold.dir/build.make CMakeFiles/Gold.dir/build
+.PHONY : Gold/fast
 
 #=============================================================================
 # Target rules for targets named SepSort
@@ -228,6 +228,19 @@ Anagrams/fast:
 .PHONY : Anagrams/fast
 
 #=============================================================================
+# Target rules for targets named Santa
+
+# Build rule for target.
+Santa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Santa
+.PHONY : Santa
+
+# fast build rule for target.
+Santa/fast:
+	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/build
+.PHONY : Santa/fast
+
+#=============================================================================
 # Target rules for targets named Sort
 
 # Build rule for target.
@@ -320,6 +333,33 @@ P25992_SeparatedSort.s: P25992_SeparatedSort.cpp.s
 P25992_SeparatedSort.cpp.s:
 	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/P25992_SeparatedSort.cpp.s
 .PHONY : P25992_SeparatedSort.cpp.s
+
+P35941_GoldBug.o: P35941_GoldBug.cpp.o
+
+.PHONY : P35941_GoldBug.o
+
+# target to build an object file
+P35941_GoldBug.cpp.o:
+	$(MAKE) -f CMakeFiles/Gold.dir/build.make CMakeFiles/Gold.dir/P35941_GoldBug.cpp.o
+.PHONY : P35941_GoldBug.cpp.o
+
+P35941_GoldBug.i: P35941_GoldBug.cpp.i
+
+.PHONY : P35941_GoldBug.i
+
+# target to preprocess a source file
+P35941_GoldBug.cpp.i:
+	$(MAKE) -f CMakeFiles/Gold.dir/build.make CMakeFiles/Gold.dir/P35941_GoldBug.cpp.i
+.PHONY : P35941_GoldBug.cpp.i
+
+P35941_GoldBug.s: P35941_GoldBug.cpp.s
+
+.PHONY : P35941_GoldBug.s
+
+# target to generate assembly for a file
+P35941_GoldBug.cpp.s:
+	$(MAKE) -f CMakeFiles/Gold.dir/build.make CMakeFiles/Gold.dir/P35941_GoldBug.cpp.s
+.PHONY : P35941_GoldBug.cpp.s
 
 P45484_MagicSquare.o: P45484_MagicSquare.cpp.o
 
@@ -516,8 +556,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Santa"
-	@echo "... rebuild_cache"
+	@echo "... Gold"
 	@echo "... SepSort"
 	@echo "... Pangrams"
 	@echo "... Diff"
@@ -527,6 +566,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... Diagonal"
 	@echo "... Anagrams"
+	@echo "... rebuild_cache"
+	@echo "... Santa"
 	@echo "... Sort"
 	@echo "... P25261_Sort.o"
 	@echo "... P25261_Sort.i"
@@ -537,6 +578,9 @@ help:
 	@echo "... P25992_SeparatedSort.o"
 	@echo "... P25992_SeparatedSort.i"
 	@echo "... P25992_SeparatedSort.s"
+	@echo "... P35941_GoldBug.o"
+	@echo "... P35941_GoldBug.i"
+	@echo "... P35941_GoldBug.s"
 	@echo "... P45484_MagicSquare.o"
 	@echo "... P45484_MagicSquare.i"
 	@echo "... P45484_MagicSquare.s"

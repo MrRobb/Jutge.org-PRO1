@@ -124,6 +124,45 @@ P04/fast:
 .PHONY : P04/fast
 
 #=============================================================================
+# Target rules for targets named Rect
+
+# Build rule for target.
+Rect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Rect
+.PHONY : Rect
+
+# fast build rule for target.
+Rect/fast:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/build
+.PHONY : Rect/fast
+
+#=============================================================================
+# Target rules for targets named Reorganize
+
+# Build rule for target.
+Reorganize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Reorganize
+.PHONY : Reorganize
+
+# fast build rule for target.
+Reorganize/fast:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/build
+.PHONY : Reorganize/fast
+
+#=============================================================================
+# Target rules for targets named P03
+
+# Build rule for target.
+P03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 P03
+.PHONY : P03
+
+# fast build rule for target.
+P03/fast:
+	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/build
+.PHONY : P03/fast
+
+#=============================================================================
 # Target rules for targets named P05
 
 # Build rule for target.
@@ -161,19 +200,6 @@ P06: cmake_check_build_system
 P06/fast:
 	$(MAKE) -f CMakeFiles/P06.dir/build.make CMakeFiles/P06.dir/build
 .PHONY : P06/fast
-
-#=============================================================================
-# Target rules for targets named P03
-
-# Build rule for target.
-P03: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 P03
-.PHONY : P03
-
-# fast build rule for target.
-P03/fast:
-	$(MAKE) -f CMakeFiles/P03.dir/build.make CMakeFiles/P03.dir/build
-.PHONY : P03/fast
 
 #=============================================================================
 # Target rules for targets named P09
@@ -403,6 +429,60 @@ P96766_Palindroms.cpp.s:
 	$(MAKE) -f CMakeFiles/P04.dir/build.make CMakeFiles/P04.dir/P96766_Palindroms.cpp.s
 .PHONY : P96766_Palindroms.cpp.s
 
+X12559_Reorganize.o: X12559_Reorganize.cpp.o
+
+.PHONY : X12559_Reorganize.o
+
+# target to build an object file
+X12559_Reorganize.cpp.o:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/X12559_Reorganize.cpp.o
+.PHONY : X12559_Reorganize.cpp.o
+
+X12559_Reorganize.i: X12559_Reorganize.cpp.i
+
+.PHONY : X12559_Reorganize.i
+
+# target to preprocess a source file
+X12559_Reorganize.cpp.i:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/X12559_Reorganize.cpp.i
+.PHONY : X12559_Reorganize.cpp.i
+
+X12559_Reorganize.s: X12559_Reorganize.cpp.s
+
+.PHONY : X12559_Reorganize.s
+
+# target to generate assembly for a file
+X12559_Reorganize.cpp.s:
+	$(MAKE) -f CMakeFiles/Reorganize.dir/build.make CMakeFiles/Reorganize.dir/X12559_Reorganize.cpp.s
+.PHONY : X12559_Reorganize.cpp.s
+
+X82451_PointRect.o: X82451_PointRect.cpp.o
+
+.PHONY : X82451_PointRect.o
+
+# target to build an object file
+X82451_PointRect.cpp.o:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/X82451_PointRect.cpp.o
+.PHONY : X82451_PointRect.cpp.o
+
+X82451_PointRect.i: X82451_PointRect.cpp.i
+
+.PHONY : X82451_PointRect.i
+
+# target to preprocess a source file
+X82451_PointRect.cpp.i:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/X82451_PointRect.cpp.i
+.PHONY : X82451_PointRect.cpp.i
+
+X82451_PointRect.s: X82451_PointRect.cpp.s
+
+.PHONY : X82451_PointRect.s
+
+# target to generate assembly for a file
+X82451_PointRect.cpp.s:
+	$(MAKE) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/X82451_PointRect.cpp.s
+.PHONY : X82451_PointRect.cpp.s
+
 X85811_First-Last.o: X85811_First-Last.cpp.o
 
 .PHONY : X85811_First-Last.o
@@ -438,11 +518,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... P04"
+	@echo "... Rect"
+	@echo "... Reorganize"
+	@echo "... P03"
 	@echo "... P05"
 	@echo "... rebuild_cache"
 	@echo "... P08"
 	@echo "... P06"
-	@echo "... P03"
 	@echo "... P09"
 	@echo "... P02"
 	@echo "... P01"
@@ -467,6 +549,12 @@ help:
 	@echo "... P96766_Palindroms.o"
 	@echo "... P96766_Palindroms.i"
 	@echo "... P96766_Palindroms.s"
+	@echo "... X12559_Reorganize.o"
+	@echo "... X12559_Reorganize.i"
+	@echo "... X12559_Reorganize.s"
+	@echo "... X82451_PointRect.o"
+	@echo "... X82451_PointRect.i"
+	@echo "... X82451_PointRect.s"
 	@echo "... X85811_First-Last.o"
 	@echo "... X85811_First-Last.i"
 	@echo "... X85811_First-Last.s"
