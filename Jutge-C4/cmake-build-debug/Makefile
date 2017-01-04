@@ -163,6 +163,19 @@ Diff/fast:
 .PHONY : Diff/fast
 
 #=============================================================================
+# Target rules for targets named Robots
+
+# Build rule for target.
+Robots: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Robots
+.PHONY : Robots
+
+# fast build rule for target.
+Robots/fast:
+	$(MAKE) -f CMakeFiles/Robots.dir/build.make CMakeFiles/Robots.dir/build
+.PHONY : Robots/fast
+
+#=============================================================================
 # Target rules for targets named Magic
 
 # Build rule for target.
@@ -333,6 +346,33 @@ P25992_SeparatedSort.s: P25992_SeparatedSort.cpp.s
 P25992_SeparatedSort.cpp.s:
 	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/P25992_SeparatedSort.cpp.s
 .PHONY : P25992_SeparatedSort.cpp.s
+
+P30744_Robots2.o: P30744_Robots2.cpp.o
+
+.PHONY : P30744_Robots2.o
+
+# target to build an object file
+P30744_Robots2.cpp.o:
+	$(MAKE) -f CMakeFiles/Robots.dir/build.make CMakeFiles/Robots.dir/P30744_Robots2.cpp.o
+.PHONY : P30744_Robots2.cpp.o
+
+P30744_Robots2.i: P30744_Robots2.cpp.i
+
+.PHONY : P30744_Robots2.i
+
+# target to preprocess a source file
+P30744_Robots2.cpp.i:
+	$(MAKE) -f CMakeFiles/Robots.dir/build.make CMakeFiles/Robots.dir/P30744_Robots2.cpp.i
+.PHONY : P30744_Robots2.cpp.i
+
+P30744_Robots2.s: P30744_Robots2.cpp.s
+
+.PHONY : P30744_Robots2.s
+
+# target to generate assembly for a file
+P30744_Robots2.cpp.s:
+	$(MAKE) -f CMakeFiles/Robots.dir/build.make CMakeFiles/Robots.dir/P30744_Robots2.cpp.s
+.PHONY : P30744_Robots2.cpp.s
 
 P35941_GoldBug.o: P35941_GoldBug.cpp.o
 
@@ -560,6 +600,7 @@ help:
 	@echo "... SepSort"
 	@echo "... Pangrams"
 	@echo "... Diff"
+	@echo "... Robots"
 	@echo "... Magic"
 	@echo "... Words"
 	@echo "... WSquare"
@@ -578,6 +619,9 @@ help:
 	@echo "... P25992_SeparatedSort.o"
 	@echo "... P25992_SeparatedSort.i"
 	@echo "... P25992_SeparatedSort.s"
+	@echo "... P30744_Robots2.o"
+	@echo "... P30744_Robots2.i"
+	@echo "... P30744_Robots2.s"
 	@echo "... P35941_GoldBug.o"
 	@echo "... P35941_GoldBug.i"
 	@echo "... P35941_GoldBug.s"

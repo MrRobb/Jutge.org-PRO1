@@ -163,6 +163,19 @@ Dicho/fast:
 .PHONY : Dicho/fast
 
 #=============================================================================
+# Target rules for targets named ArrayDiff
+
+# Build rule for target.
+ArrayDiff: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ArrayDiff
+.PHONY : ArrayDiff
+
+# fast build rule for target.
+ArrayDiff/fast:
+	$(MAKE) -f CMakeFiles/ArrayDiff.dir/build.make CMakeFiles/ArrayDiff.dir/build
+.PHONY : ArrayDiff/fast
+
+#=============================================================================
 # Target rules for targets named River
 
 # Build rule for target.
@@ -176,6 +189,19 @@ River/fast:
 .PHONY : River/fast
 
 #=============================================================================
+# Target rules for targets named ArrayInters
+
+# Build rule for target.
+ArrayInters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ArrayInters
+.PHONY : ArrayInters
+
+# fast build rule for target.
+ArrayInters/fast:
+	$(MAKE) -f CMakeFiles/ArrayInters.dir/build.make CMakeFiles/ArrayInters.dir/build
+.PHONY : ArrayInters/fast
+
+#=============================================================================
 # Target rules for targets named MaxPos
 
 # Build rule for target.
@@ -187,6 +213,33 @@ MaxPos: cmake_check_build_system
 MaxPos/fast:
 	$(MAKE) -f CMakeFiles/MaxPos.dir/build.make CMakeFiles/MaxPos.dir/build
 .PHONY : MaxPos/fast
+
+P16072_ArrayIntersection.o: P16072_ArrayIntersection.cpp.o
+
+.PHONY : P16072_ArrayIntersection.o
+
+# target to build an object file
+P16072_ArrayIntersection.cpp.o:
+	$(MAKE) -f CMakeFiles/ArrayInters.dir/build.make CMakeFiles/ArrayInters.dir/P16072_ArrayIntersection.cpp.o
+.PHONY : P16072_ArrayIntersection.cpp.o
+
+P16072_ArrayIntersection.i: P16072_ArrayIntersection.cpp.i
+
+.PHONY : P16072_ArrayIntersection.i
+
+# target to preprocess a source file
+P16072_ArrayIntersection.cpp.i:
+	$(MAKE) -f CMakeFiles/ArrayInters.dir/build.make CMakeFiles/ArrayInters.dir/P16072_ArrayIntersection.cpp.i
+.PHONY : P16072_ArrayIntersection.cpp.i
+
+P16072_ArrayIntersection.s: P16072_ArrayIntersection.cpp.s
+
+.PHONY : P16072_ArrayIntersection.s
+
+# target to generate assembly for a file
+P16072_ArrayIntersection.cpp.s:
+	$(MAKE) -f CMakeFiles/ArrayInters.dir/build.make CMakeFiles/ArrayInters.dir/P16072_ArrayIntersection.cpp.s
+.PHONY : P16072_ArrayIntersection.cpp.s
 
 P29094_MaxPos.o: P29094_MaxPos.cpp.o
 
@@ -214,6 +267,33 @@ P29094_MaxPos.s: P29094_MaxPos.cpp.s
 P29094_MaxPos.cpp.s:
 	$(MAKE) -f CMakeFiles/MaxPos.dir/build.make CMakeFiles/MaxPos.dir/P29094_MaxPos.cpp.s
 .PHONY : P29094_MaxPos.cpp.s
+
+P46584_ArrayDiff.o: P46584_ArrayDiff.cpp.o
+
+.PHONY : P46584_ArrayDiff.o
+
+# target to build an object file
+P46584_ArrayDiff.cpp.o:
+	$(MAKE) -f CMakeFiles/ArrayDiff.dir/build.make CMakeFiles/ArrayDiff.dir/P46584_ArrayDiff.cpp.o
+.PHONY : P46584_ArrayDiff.cpp.o
+
+P46584_ArrayDiff.i: P46584_ArrayDiff.cpp.i
+
+.PHONY : P46584_ArrayDiff.i
+
+# target to preprocess a source file
+P46584_ArrayDiff.cpp.i:
+	$(MAKE) -f CMakeFiles/ArrayDiff.dir/build.make CMakeFiles/ArrayDiff.dir/P46584_ArrayDiff.cpp.i
+.PHONY : P46584_ArrayDiff.cpp.i
+
+P46584_ArrayDiff.s: P46584_ArrayDiff.cpp.s
+
+.PHONY : P46584_ArrayDiff.s
+
+# target to generate assembly for a file
+P46584_ArrayDiff.cpp.s:
+	$(MAKE) -f CMakeFiles/ArrayDiff.dir/build.make CMakeFiles/ArrayDiff.dir/P46584_ArrayDiff.cpp.s
+.PHONY : P46584_ArrayDiff.cpp.s
 
 P52205_Mergesort.o: P52205_Mergesort.cpp.o
 
@@ -362,11 +442,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... Sieve"
 	@echo "... Dicho"
+	@echo "... ArrayDiff"
 	@echo "... River"
+	@echo "... ArrayInters"
 	@echo "... MaxPos"
+	@echo "... P16072_ArrayIntersection.o"
+	@echo "... P16072_ArrayIntersection.i"
+	@echo "... P16072_ArrayIntersection.s"
 	@echo "... P29094_MaxPos.o"
 	@echo "... P29094_MaxPos.i"
 	@echo "... P29094_MaxPos.s"
+	@echo "... P46584_ArrayDiff.o"
+	@echo "... P46584_ArrayDiff.i"
+	@echo "... P46584_ArrayDiff.s"
 	@echo "... P52205_Mergesort.o"
 	@echo "... P52205_Mergesort.i"
 	@echo "... P52205_Mergesort.s"
