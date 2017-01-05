@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Product
+
+# Build rule for target.
+Product: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Product
+.PHONY : Product
+
+# fast build rule for target.
+Product/fast:
+	$(MAKE) -f CMakeFiles/Product.dir/build.make CMakeFiles/Product.dir/build
+.PHONY : Product/fast
+
+#=============================================================================
 # Target rules for targets named Gold
 
 # Build rule for target.
@@ -509,6 +522,33 @@ P82111_WordSquare.cpp.s:
 	$(MAKE) -f CMakeFiles/WSquare.dir/build.make CMakeFiles/WSquare.dir/P82111_WordSquare.cpp.s
 .PHONY : P82111_WordSquare.cpp.s
 
+P89407_StableProducts.o: P89407_StableProducts.cpp.o
+
+.PHONY : P89407_StableProducts.o
+
+# target to build an object file
+P89407_StableProducts.cpp.o:
+	$(MAKE) -f CMakeFiles/Product.dir/build.make CMakeFiles/Product.dir/P89407_StableProducts.cpp.o
+.PHONY : P89407_StableProducts.cpp.o
+
+P89407_StableProducts.i: P89407_StableProducts.cpp.i
+
+.PHONY : P89407_StableProducts.i
+
+# target to preprocess a source file
+P89407_StableProducts.cpp.i:
+	$(MAKE) -f CMakeFiles/Product.dir/build.make CMakeFiles/Product.dir/P89407_StableProducts.cpp.i
+.PHONY : P89407_StableProducts.cpp.i
+
+P89407_StableProducts.s: P89407_StableProducts.cpp.s
+
+.PHONY : P89407_StableProducts.s
+
+# target to generate assembly for a file
+P89407_StableProducts.cpp.s:
+	$(MAKE) -f CMakeFiles/Product.dir/build.make CMakeFiles/Product.dir/P89407_StableProducts.cpp.s
+.PHONY : P89407_StableProducts.cpp.s
+
 P96432_SecretSanta.o: P96432_SecretSanta.cpp.o
 
 .PHONY : P96432_SecretSanta.o
@@ -596,6 +636,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... Product"
 	@echo "... Gold"
 	@echo "... SepSort"
 	@echo "... Pangrams"
@@ -637,6 +678,9 @@ help:
 	@echo "... P82111_WordSquare.o"
 	@echo "... P82111_WordSquare.i"
 	@echo "... P82111_WordSquare.s"
+	@echo "... P89407_StableProducts.o"
+	@echo "... P89407_StableProducts.i"
+	@echo "... P89407_StableProducts.s"
 	@echo "... P96432_SecretSanta.o"
 	@echo "... P96432_SecretSanta.i"
 	@echo "... P96432_SecretSanta.s"

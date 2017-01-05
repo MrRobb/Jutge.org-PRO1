@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Keys
+
+# Build rule for target.
+Keys: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Keys
+.PHONY : Keys
+
+# fast build rule for target.
+Keys/fast:
+	$(MAKE) -f CMakeFiles/Keys.dir/build.make CMakeFiles/Keys.dir/build
+.PHONY : Keys/fast
+
+#=============================================================================
+# Target rules for targets named Jump
+
+# Build rule for target.
+Jump: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Jump
+.PHONY : Jump
+
+# fast build rule for target.
+Jump/fast:
+	$(MAKE) -f CMakeFiles/Jump.dir/build.make CMakeFiles/Jump.dir/build
+.PHONY : Jump/fast
+
+#=============================================================================
 # Target rules for targets named Insert
 
 # Build rule for target.
@@ -349,6 +375,33 @@ P55043_River.cpp.s:
 	$(MAKE) -f CMakeFiles/River.dir/build.make CMakeFiles/River.dir/P55043_River.cpp.s
 .PHONY : P55043_River.cpp.s
 
+P77227_Jump.o: P77227_Jump.cpp.o
+
+.PHONY : P77227_Jump.o
+
+# target to build an object file
+P77227_Jump.cpp.o:
+	$(MAKE) -f CMakeFiles/Jump.dir/build.make CMakeFiles/Jump.dir/P77227_Jump.cpp.o
+.PHONY : P77227_Jump.cpp.o
+
+P77227_Jump.i: P77227_Jump.cpp.i
+
+.PHONY : P77227_Jump.i
+
+# target to preprocess a source file
+P77227_Jump.cpp.i:
+	$(MAKE) -f CMakeFiles/Jump.dir/build.make CMakeFiles/Jump.dir/P77227_Jump.cpp.i
+.PHONY : P77227_Jump.cpp.i
+
+P77227_Jump.s: P77227_Jump.cpp.s
+
+.PHONY : P77227_Jump.s
+
+# target to generate assembly for a file
+P77227_Jump.cpp.s:
+	$(MAKE) -f CMakeFiles/Jump.dir/build.make CMakeFiles/Jump.dir/P77227_Jump.cpp.s
+.PHONY : P77227_Jump.cpp.s
+
 P81966_Dichotomic.o: P81966_Dichotomic.cpp.o
 
 .PHONY : P81966_Dichotomic.o
@@ -403,6 +456,33 @@ P89124_SieveEratosthenes.cpp.s:
 	$(MAKE) -f CMakeFiles/Sieve.dir/build.make CMakeFiles/Sieve.dir/P89124_SieveEratosthenes.cpp.s
 .PHONY : P89124_SieveEratosthenes.cpp.s
 
+P96529_KeysParenthesis.o: P96529_KeysParenthesis.cpp.o
+
+.PHONY : P96529_KeysParenthesis.o
+
+# target to build an object file
+P96529_KeysParenthesis.cpp.o:
+	$(MAKE) -f CMakeFiles/Keys.dir/build.make CMakeFiles/Keys.dir/P96529_KeysParenthesis.cpp.o
+.PHONY : P96529_KeysParenthesis.cpp.o
+
+P96529_KeysParenthesis.i: P96529_KeysParenthesis.cpp.i
+
+.PHONY : P96529_KeysParenthesis.i
+
+# target to preprocess a source file
+P96529_KeysParenthesis.cpp.i:
+	$(MAKE) -f CMakeFiles/Keys.dir/build.make CMakeFiles/Keys.dir/P96529_KeysParenthesis.cpp.i
+.PHONY : P96529_KeysParenthesis.cpp.i
+
+P96529_KeysParenthesis.s: P96529_KeysParenthesis.cpp.s
+
+.PHONY : P96529_KeysParenthesis.s
+
+# target to generate assembly for a file
+P96529_KeysParenthesis.cpp.s:
+	$(MAKE) -f CMakeFiles/Keys.dir/build.make CMakeFiles/Keys.dir/P96529_KeysParenthesis.cpp.s
+.PHONY : P96529_KeysParenthesis.cpp.s
+
 P98179_Insertion.o: P98179_Insertion.cpp.o
 
 .PHONY : P98179_Insertion.o
@@ -437,12 +517,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... Keys"
+	@echo "... Jump"
 	@echo "... Insert"
 	@echo "... Merge"
-	@echo "... edit_cache"
 	@echo "... Sieve"
 	@echo "... Dicho"
 	@echo "... ArrayDiff"
+	@echo "... edit_cache"
 	@echo "... River"
 	@echo "... ArrayInters"
 	@echo "... MaxPos"
@@ -461,12 +543,18 @@ help:
 	@echo "... P55043_River.o"
 	@echo "... P55043_River.i"
 	@echo "... P55043_River.s"
+	@echo "... P77227_Jump.o"
+	@echo "... P77227_Jump.i"
+	@echo "... P77227_Jump.s"
 	@echo "... P81966_Dichotomic.o"
 	@echo "... P81966_Dichotomic.i"
 	@echo "... P81966_Dichotomic.s"
 	@echo "... P89124_SieveEratosthenes.o"
 	@echo "... P89124_SieveEratosthenes.i"
 	@echo "... P89124_SieveEratosthenes.s"
+	@echo "... P96529_KeysParenthesis.o"
+	@echo "... P96529_KeysParenthesis.i"
+	@echo "... P96529_KeysParenthesis.s"
 	@echo "... P98179_Insertion.o"
 	@echo "... P98179_Insertion.i"
 	@echo "... P98179_Insertion.s"
