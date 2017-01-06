@@ -111,6 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Travel
+
+# Build rule for target.
+Travel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Travel
+.PHONY : Travel
+
+# fast build rule for target.
+Travel/fast:
+	$(MAKE) -f CMakeFiles/Travel.dir/build.make CMakeFiles/Travel.dir/build
+.PHONY : Travel/fast
+
+#=============================================================================
+# Target rules for targets named Valleys
+
+# Build rule for target.
+Valleys: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Valleys
+.PHONY : Valleys
+
+# fast build rule for target.
+Valleys/fast:
+	$(MAKE) -f CMakeFiles/Valleys.dir/build.make CMakeFiles/Valleys.dir/build
+.PHONY : Valleys/fast
+
+#=============================================================================
+# Target rules for targets named Maya
+
+# Build rule for target.
+Maya: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Maya
+.PHONY : Maya
+
+# fast build rule for target.
+Maya/fast:
+	$(MAKE) -f CMakeFiles/Maya.dir/build.make CMakeFiles/Maya.dir/build
+.PHONY : Maya/fast
+
+#=============================================================================
+# Target rules for targets named Compressed
+
+# Build rule for target.
+Compressed: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Compressed
+.PHONY : Compressed
+
+# fast build rule for target.
+Compressed/fast:
+	$(MAKE) -f CMakeFiles/Compressed.dir/build.make CMakeFiles/Compressed.dir/build
+.PHONY : Compressed/fast
+
+#=============================================================================
+# Target rules for targets named Simp
+
+# Build rule for target.
+Simp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Simp
+.PHONY : Simp
+
+# fast build rule for target.
+Simp/fast:
+	$(MAKE) -f CMakeFiles/Simp.dir/build.make CMakeFiles/Simp.dir/build
+.PHONY : Simp/fast
+
+#=============================================================================
 # Target rules for targets named Product
 
 # Build rule for target.
@@ -215,6 +280,19 @@ Words/fast:
 .PHONY : Words/fast
 
 #=============================================================================
+# Target rules for targets named AddUp
+
+# Build rule for target.
+AddUp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AddUp
+.PHONY : AddUp
+
+# fast build rule for target.
+AddUp/fast:
+	$(MAKE) -f CMakeFiles/AddUp.dir/build.make CMakeFiles/AddUp.dir/build
+.PHONY : AddUp/fast
+
+#=============================================================================
 # Target rules for targets named WSquare
 
 # Build rule for target.
@@ -278,6 +356,33 @@ Sort: cmake_check_build_system
 Sort/fast:
 	$(MAKE) -f CMakeFiles/Sort.dir/build.make CMakeFiles/Sort.dir/build
 .PHONY : Sort/fast
+
+P16175_CompressedVectors.o: P16175_CompressedVectors.cpp.o
+
+.PHONY : P16175_CompressedVectors.o
+
+# target to build an object file
+P16175_CompressedVectors.cpp.o:
+	$(MAKE) -f CMakeFiles/Compressed.dir/build.make CMakeFiles/Compressed.dir/P16175_CompressedVectors.cpp.o
+.PHONY : P16175_CompressedVectors.cpp.o
+
+P16175_CompressedVectors.i: P16175_CompressedVectors.cpp.i
+
+.PHONY : P16175_CompressedVectors.i
+
+# target to preprocess a source file
+P16175_CompressedVectors.cpp.i:
+	$(MAKE) -f CMakeFiles/Compressed.dir/build.make CMakeFiles/Compressed.dir/P16175_CompressedVectors.cpp.i
+.PHONY : P16175_CompressedVectors.cpp.i
+
+P16175_CompressedVectors.s: P16175_CompressedVectors.cpp.s
+
+.PHONY : P16175_CompressedVectors.s
+
+# target to generate assembly for a file
+P16175_CompressedVectors.cpp.s:
+	$(MAKE) -f CMakeFiles/Compressed.dir/build.make CMakeFiles/Compressed.dir/P16175_CompressedVectors.cpp.s
+.PHONY : P16175_CompressedVectors.cpp.s
 
 P25261_Sort.o: P25261_Sort.cpp.o
 
@@ -414,6 +519,33 @@ P35941_GoldBug.cpp.s:
 	$(MAKE) -f CMakeFiles/Gold.dir/build.make CMakeFiles/Gold.dir/P35941_GoldBug.cpp.s
 .PHONY : P35941_GoldBug.cpp.s
 
+P35971_TraversingMatrices.o: P35971_TraversingMatrices.cpp.o
+
+.PHONY : P35971_TraversingMatrices.o
+
+# target to build an object file
+P35971_TraversingMatrices.cpp.o:
+	$(MAKE) -f CMakeFiles/Travel.dir/build.make CMakeFiles/Travel.dir/P35971_TraversingMatrices.cpp.o
+.PHONY : P35971_TraversingMatrices.cpp.o
+
+P35971_TraversingMatrices.i: P35971_TraversingMatrices.cpp.i
+
+.PHONY : P35971_TraversingMatrices.i
+
+# target to preprocess a source file
+P35971_TraversingMatrices.cpp.i:
+	$(MAKE) -f CMakeFiles/Travel.dir/build.make CMakeFiles/Travel.dir/P35971_TraversingMatrices.cpp.i
+.PHONY : P35971_TraversingMatrices.cpp.i
+
+P35971_TraversingMatrices.s: P35971_TraversingMatrices.cpp.s
+
+.PHONY : P35971_TraversingMatrices.s
+
+# target to generate assembly for a file
+P35971_TraversingMatrices.cpp.s:
+	$(MAKE) -f CMakeFiles/Travel.dir/build.make CMakeFiles/Travel.dir/P35971_TraversingMatrices.cpp.s
+.PHONY : P35971_TraversingMatrices.cpp.s
+
 P45484_MagicSquare.o: P45484_MagicSquare.cpp.o
 
 .PHONY : P45484_MagicSquare.o
@@ -440,6 +572,60 @@ P45484_MagicSquare.s: P45484_MagicSquare.cpp.s
 P45484_MagicSquare.cpp.s:
 	$(MAKE) -f CMakeFiles/Magic.dir/build.make CMakeFiles/Magic.dir/P45484_MagicSquare.cpp.s
 .PHONY : P45484_MagicSquare.cpp.s
+
+P54711_Maya.o: P54711_Maya.cpp.o
+
+.PHONY : P54711_Maya.o
+
+# target to build an object file
+P54711_Maya.cpp.o:
+	$(MAKE) -f CMakeFiles/Maya.dir/build.make CMakeFiles/Maya.dir/P54711_Maya.cpp.o
+.PHONY : P54711_Maya.cpp.o
+
+P54711_Maya.i: P54711_Maya.cpp.i
+
+.PHONY : P54711_Maya.i
+
+# target to preprocess a source file
+P54711_Maya.cpp.i:
+	$(MAKE) -f CMakeFiles/Maya.dir/build.make CMakeFiles/Maya.dir/P54711_Maya.cpp.i
+.PHONY : P54711_Maya.cpp.i
+
+P54711_Maya.s: P54711_Maya.cpp.s
+
+.PHONY : P54711_Maya.s
+
+# target to generate assembly for a file
+P54711_Maya.cpp.s:
+	$(MAKE) -f CMakeFiles/Maya.dir/build.make CMakeFiles/Maya.dir/P54711_Maya.cpp.s
+.PHONY : P54711_Maya.cpp.s
+
+P55982_AddUp.o: P55982_AddUp.cpp.o
+
+.PHONY : P55982_AddUp.o
+
+# target to build an object file
+P55982_AddUp.cpp.o:
+	$(MAKE) -f CMakeFiles/AddUp.dir/build.make CMakeFiles/AddUp.dir/P55982_AddUp.cpp.o
+.PHONY : P55982_AddUp.cpp.o
+
+P55982_AddUp.i: P55982_AddUp.cpp.i
+
+.PHONY : P55982_AddUp.i
+
+# target to preprocess a source file
+P55982_AddUp.cpp.i:
+	$(MAKE) -f CMakeFiles/AddUp.dir/build.make CMakeFiles/AddUp.dir/P55982_AddUp.cpp.i
+.PHONY : P55982_AddUp.cpp.i
+
+P55982_AddUp.s: P55982_AddUp.cpp.s
+
+.PHONY : P55982_AddUp.s
+
+# target to generate assembly for a file
+P55982_AddUp.cpp.s:
+	$(MAKE) -f CMakeFiles/AddUp.dir/build.make CMakeFiles/AddUp.dir/P55982_AddUp.cpp.s
+.PHONY : P55982_AddUp.cpp.s
 
 P71916_Anagrams.o: P71916_Anagrams.cpp.o
 
@@ -494,6 +680,33 @@ P77715_Pangrams.s: P77715_Pangrams.cpp.s
 P77715_Pangrams.cpp.s:
 	$(MAKE) -f CMakeFiles/Pangrams.dir/build.make CMakeFiles/Pangrams.dir/P77715_Pangrams.cpp.s
 .PHONY : P77715_Pangrams.cpp.s
+
+P80868_NumericalValleys.o: P80868_NumericalValleys.cpp.o
+
+.PHONY : P80868_NumericalValleys.o
+
+# target to build an object file
+P80868_NumericalValleys.cpp.o:
+	$(MAKE) -f CMakeFiles/Valleys.dir/build.make CMakeFiles/Valleys.dir/P80868_NumericalValleys.cpp.o
+.PHONY : P80868_NumericalValleys.cpp.o
+
+P80868_NumericalValleys.i: P80868_NumericalValleys.cpp.i
+
+.PHONY : P80868_NumericalValleys.i
+
+# target to preprocess a source file
+P80868_NumericalValleys.cpp.i:
+	$(MAKE) -f CMakeFiles/Valleys.dir/build.make CMakeFiles/Valleys.dir/P80868_NumericalValleys.cpp.i
+.PHONY : P80868_NumericalValleys.cpp.i
+
+P80868_NumericalValleys.s: P80868_NumericalValleys.cpp.s
+
+.PHONY : P80868_NumericalValleys.s
+
+# target to generate assembly for a file
+P80868_NumericalValleys.cpp.s:
+	$(MAKE) -f CMakeFiles/Valleys.dir/build.make CMakeFiles/Valleys.dir/P80868_NumericalValleys.cpp.s
+.PHONY : P80868_NumericalValleys.cpp.s
 
 P82111_WordSquare.o: P82111_WordSquare.cpp.o
 
@@ -576,6 +789,33 @@ P96432_SecretSanta.cpp.s:
 	$(MAKE) -f CMakeFiles/Santa.dir/build.make CMakeFiles/Santa.dir/P96432_SecretSanta.cpp.s
 .PHONY : P96432_SecretSanta.cpp.s
 
+P98770_VectorsSimp.o: P98770_VectorsSimp.cpp.o
+
+.PHONY : P98770_VectorsSimp.o
+
+# target to build an object file
+P98770_VectorsSimp.cpp.o:
+	$(MAKE) -f CMakeFiles/Simp.dir/build.make CMakeFiles/Simp.dir/P98770_VectorsSimp.cpp.o
+.PHONY : P98770_VectorsSimp.cpp.o
+
+P98770_VectorsSimp.i: P98770_VectorsSimp.cpp.i
+
+.PHONY : P98770_VectorsSimp.i
+
+# target to preprocess a source file
+P98770_VectorsSimp.cpp.i:
+	$(MAKE) -f CMakeFiles/Simp.dir/build.make CMakeFiles/Simp.dir/P98770_VectorsSimp.cpp.i
+.PHONY : P98770_VectorsSimp.cpp.i
+
+P98770_VectorsSimp.s: P98770_VectorsSimp.cpp.s
+
+.PHONY : P98770_VectorsSimp.s
+
+# target to generate assembly for a file
+P98770_VectorsSimp.cpp.s:
+	$(MAKE) -f CMakeFiles/Simp.dir/build.make CMakeFiles/Simp.dir/P98770_VectorsSimp.cpp.s
+.PHONY : P98770_VectorsSimp.cpp.s
+
 X17276_DiagonalesCrecientes.o: X17276_DiagonalesCrecientes.cpp.o
 
 .PHONY : X17276_DiagonalesCrecientes.o
@@ -636,6 +876,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... Travel"
+	@echo "... Valleys"
+	@echo "... Maya"
+	@echo "... Compressed"
+	@echo "... Simp"
 	@echo "... Product"
 	@echo "... Gold"
 	@echo "... SepSort"
@@ -644,6 +889,7 @@ help:
 	@echo "... Robots"
 	@echo "... Magic"
 	@echo "... Words"
+	@echo "... AddUp"
 	@echo "... WSquare"
 	@echo "... edit_cache"
 	@echo "... Diagonal"
@@ -651,6 +897,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Santa"
 	@echo "... Sort"
+	@echo "... P16175_CompressedVectors.o"
+	@echo "... P16175_CompressedVectors.i"
+	@echo "... P16175_CompressedVectors.s"
 	@echo "... P25261_Sort.o"
 	@echo "... P25261_Sort.i"
 	@echo "... P25261_Sort.s"
@@ -666,15 +915,27 @@ help:
 	@echo "... P35941_GoldBug.o"
 	@echo "... P35941_GoldBug.i"
 	@echo "... P35941_GoldBug.s"
+	@echo "... P35971_TraversingMatrices.o"
+	@echo "... P35971_TraversingMatrices.i"
+	@echo "... P35971_TraversingMatrices.s"
 	@echo "... P45484_MagicSquare.o"
 	@echo "... P45484_MagicSquare.i"
 	@echo "... P45484_MagicSquare.s"
+	@echo "... P54711_Maya.o"
+	@echo "... P54711_Maya.i"
+	@echo "... P54711_Maya.s"
+	@echo "... P55982_AddUp.o"
+	@echo "... P55982_AddUp.i"
+	@echo "... P55982_AddUp.s"
 	@echo "... P71916_Anagrams.o"
 	@echo "... P71916_Anagrams.i"
 	@echo "... P71916_Anagrams.s"
 	@echo "... P77715_Pangrams.o"
 	@echo "... P77715_Pangrams.i"
 	@echo "... P77715_Pangrams.s"
+	@echo "... P80868_NumericalValleys.o"
+	@echo "... P80868_NumericalValleys.i"
+	@echo "... P80868_NumericalValleys.s"
 	@echo "... P82111_WordSquare.o"
 	@echo "... P82111_WordSquare.i"
 	@echo "... P82111_WordSquare.s"
@@ -684,6 +945,9 @@ help:
 	@echo "... P96432_SecretSanta.o"
 	@echo "... P96432_SecretSanta.i"
 	@echo "... P96432_SecretSanta.s"
+	@echo "... P98770_VectorsSimp.o"
+	@echo "... P98770_VectorsSimp.i"
+	@echo "... P98770_VectorsSimp.s"
 	@echo "... X17276_DiagonalesCrecientes.o"
 	@echo "... X17276_DiagonalesCrecientes.i"
 	@echo "... X17276_DiagonalesCrecientes.s"
