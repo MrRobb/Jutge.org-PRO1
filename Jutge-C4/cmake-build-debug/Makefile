@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Game
+
+# Build rule for target.
+Game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Game
+.PHONY : Game
+
+# fast build rule for target.
+Game/fast:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
+.PHONY : Game/fast
+
+#=============================================================================
+# Target rules for targets named Infix
+
+# Build rule for target.
+Infix: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Infix
+.PHONY : Infix
+
+# fast build rule for target.
+Infix/fast:
+	$(MAKE) -f CMakeFiles/Infix.dir/build.make CMakeFiles/Infix.dir/build
+.PHONY : Infix/fast
+
+#=============================================================================
 # Target rules for targets named Travel
 
 # Build rule for target.
@@ -464,6 +490,60 @@ P25992_SeparatedSort.s: P25992_SeparatedSort.cpp.s
 P25992_SeparatedSort.cpp.s:
 	$(MAKE) -f CMakeFiles/SepSort.dir/build.make CMakeFiles/SepSort.dir/P25992_SeparatedSort.cpp.s
 .PHONY : P25992_SeparatedSort.cpp.s
+
+P26100_GameLife.o: P26100_GameLife.cpp.o
+
+.PHONY : P26100_GameLife.o
+
+# target to build an object file
+P26100_GameLife.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/P26100_GameLife.cpp.o
+.PHONY : P26100_GameLife.cpp.o
+
+P26100_GameLife.i: P26100_GameLife.cpp.i
+
+.PHONY : P26100_GameLife.i
+
+# target to preprocess a source file
+P26100_GameLife.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/P26100_GameLife.cpp.i
+.PHONY : P26100_GameLife.cpp.i
+
+P26100_GameLife.s: P26100_GameLife.cpp.s
+
+.PHONY : P26100_GameLife.s
+
+# target to generate assembly for a file
+P26100_GameLife.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/P26100_GameLife.cpp.s
+.PHONY : P26100_GameLife.cpp.s
+
+P29428_Infixes.o: P29428_Infixes.cpp.o
+
+.PHONY : P29428_Infixes.o
+
+# target to build an object file
+P29428_Infixes.cpp.o:
+	$(MAKE) -f CMakeFiles/Infix.dir/build.make CMakeFiles/Infix.dir/P29428_Infixes.cpp.o
+.PHONY : P29428_Infixes.cpp.o
+
+P29428_Infixes.i: P29428_Infixes.cpp.i
+
+.PHONY : P29428_Infixes.i
+
+# target to preprocess a source file
+P29428_Infixes.cpp.i:
+	$(MAKE) -f CMakeFiles/Infix.dir/build.make CMakeFiles/Infix.dir/P29428_Infixes.cpp.i
+.PHONY : P29428_Infixes.cpp.i
+
+P29428_Infixes.s: P29428_Infixes.cpp.s
+
+.PHONY : P29428_Infixes.s
+
+# target to generate assembly for a file
+P29428_Infixes.cpp.s:
+	$(MAKE) -f CMakeFiles/Infix.dir/build.make CMakeFiles/Infix.dir/P29428_Infixes.cpp.s
+.PHONY : P29428_Infixes.cpp.s
 
 P30744_Robots2.o: P30744_Robots2.cpp.o
 
@@ -876,6 +956,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... Game"
+	@echo "... Infix"
 	@echo "... Travel"
 	@echo "... Valleys"
 	@echo "... Maya"
@@ -909,6 +991,12 @@ help:
 	@echo "... P25992_SeparatedSort.o"
 	@echo "... P25992_SeparatedSort.i"
 	@echo "... P25992_SeparatedSort.s"
+	@echo "... P26100_GameLife.o"
+	@echo "... P26100_GameLife.i"
+	@echo "... P26100_GameLife.s"
+	@echo "... P29428_Infixes.o"
+	@echo "... P29428_Infixes.i"
+	@echo "... P29428_Infixes.s"
 	@echo "... P30744_Robots2.o"
 	@echo "... P30744_Robots2.i"
 	@echo "... P30744_Robots2.s"
